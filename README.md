@@ -42,7 +42,7 @@ Before you begin, ensure you have Python 3.7 or higher installed. Then, follow t
    - Create a `.env` file in your project directory (if it doesn't exist).
    - Add your Hugging Face API token to the `.env` file:
      ```
-     HUGGINGFACE_TOKEN=your-api-token-here
+     HUGGINGFACEHUB_API_TOKEN=your-api-token-here
      ```
 
 ### Running the Project
