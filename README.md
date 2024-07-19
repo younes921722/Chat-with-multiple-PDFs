@@ -1,3 +1,6 @@
+
+![Screenshot 2024-07-19 190631](https://github.com/user-attachments/assets/7d9a941a-18a6-428a-8d37-3a45e13a3cbf)
+
 # Chat with your PDFs using Hugging Face LLMs and Embeddings
 
 This project demonstrates how to leverage Retrieval-Augmented Generation (RAG) to create a chatbot that interacts with PDF documents. By combining Hugging Face's language models and embeddings with the help of LangChain, we can extract relevant information from PDFs and generate context-aware responses. The user-friendly interface is built using Streamlit.
