@@ -28,14 +28,14 @@ def get_vectorstore(chunks):
     vector_db = FAISS.from_texts(texts=chunks,
                             embedding=embeddings
                             )
-    print("*************************************************i passed the vector db")
     return vector_db
 
 def get_conversation_chain(vectorstore):
     load_dotenv()
 
     sec_key = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-    repo_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+    # repo_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+    repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
     llm = HuggingFaceEndpoint(repo_id=repo_id,max_length=128,temperature=0.7,token=sec_key)
     # llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":0.5, "max_length":512})
 
